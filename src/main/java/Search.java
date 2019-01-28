@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -20,8 +21,15 @@ public class Search {
 
         // Binary search from collection.
         Scanner key= new Scanner(System.in);
-        System.out.println("please enter the key to search from this collection"+al);
+        System.out.println("please enter the key to search from this collection"+collection);
         int  ke=key.nextInt();
 
+        if(collection.contains(ke)) {
+            int index = Collections.binarySearch(collection, ke);
+            System.out.println(index);
+        }
+        else {
+            System.out.println("-1");
+        }
     }
 }
