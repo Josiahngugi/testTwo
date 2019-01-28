@@ -9,5 +9,13 @@ public class Search {
         Scanner input= new Scanner(System.in);
         System.out.println("please enter the of number items you want to insert");
         int item= input.nextInt();
+
+//        inserting items into collection
+        for(int i=0;i<item;i++){
+            Scanner obj= new Scanner(System.in);
+            System.out.println("item"+i);
+            int x=obj.nextInt();
+            collection.add(x);
+        }
     }
 }
