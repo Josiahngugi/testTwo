@@ -17,5 +17,11 @@ public class Search {
             int x=obj.nextInt();
             collection.add(x);
         }
+
+        // Binary search from collection.
+        Scanner key= new Scanner(System.in);
+        System.out.println("please enter the key to search from this collection"+al);
+        int  ke=key.nextInt();
+
     }
 }
