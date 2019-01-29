@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class Search {
     public static void main(String [] args){
-
+        
+        try{
         List collection = new ArrayList();
         Scanner input= new Scanner(System.in);
         System.out.println("please enter the of number items you want to insert");
@@ -30,6 +31,9 @@ public class Search {
         }
         else {
             System.out.println("-1");
+        }
+        }catch(Exception e){
+        System.out.println(e)
         }
     }
 }
